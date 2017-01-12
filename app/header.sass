@@ -3,3 +3,39 @@
 @import "sass/base"
 
 //First screen styles
+.header
+  div[class*='col-']
+    padding: 0
+  background: url("img/header__background.png")
+  background-size: cover
+  background-position: center
+  &__logo, &__heading
+    margin: 2em 0 4em 0
+  &__heading
+    color: white
+    text-align: right
+    h1
+      margin-bottom: .25em
+      text-transform: uppercase
+
+.row-flex
+  display: flex
+  flex-flow: row wrap
+
+.navbar
+  margin-bottom: 1.75em
+  text-align: right
+  a
+    color: white
+    font-size: 2em
+    padding: 0 1em
+    display: inline-block
+    &.active
+      border-bottom: 0.3em white solid
+      background-color: rgba(#38596E, 0.5)
+      border-radius: .25em .25em 0 0
+
+.col-flex
+  display: flex
+  flex-flow: column wrap
+  justify-content: space-between

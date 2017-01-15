@@ -64,25 +64,19 @@
 	<header class="header">
 		<!-- TODO: Сделать шапку адаптивной (написать media) -->
 		<div class="container">
-			<div class="row row-flex no-gutters">
-				<div class="header__logo col-lg-4 col-sm-4  col-xs-12 col-12">
-					<object type="image/svg+xml" data="img/logo.svg">Your browser does not support SVGs</object>
-				</div>
-				<div class="col-flex col-lg-8 col-sm-8 col-xs-12 col-12">
-					<section class="header__heading">
-						<!-- TODO: Подумать насчёт увеличения margin-top -->
-						<h1>Кафедра уголовного права</h1>
-						<h2>уголовного процесса и криминалистики</h2>
-						<!-- TODO: Прикрутить Font Awesome -->
-						<span>Телефон: 54-12-23</span>
-						<span>Корп. 5, ауд. 1233</span>
-					</section>
-					<nav class="navbar">
-						<a href="/" >О кафедре</a>
-						<a href="/" class="active">Расписание</a>
-						<a href="/">Документы</a>
-					</nav>
-				</div>
+			<div class="row flex-container">
+				<object class="header__logo" type="image/svg+xml" data="img/logo.svg">Your browser does not support SVGs</object>
+				<section class="header__heading">
+					<h1>Кафедра уголовного права</h1>
+					<h2>уголовного процесса и криминалистики</h2>
+					<span>Телефон: 54-12-23</span>
+					<span>Корп. 5, ауд. 1233</span>
+				</section>
+				<nav class="navbar">
+					<a href="/" class="active"><i class="fa-info-circle fa"></i> <span>О кафедре</span></a>
+					<a href="/"><i class="fa-calendar fa"></i> <span>Расписание</span></a>
+					<a href="/"><i class="fa-file fa"></i> <span>Документы</span></a>
+				</nav>
 			</div>
 		</div>
 	</header>

@@ -4,71 +4,72 @@
 
 //First screen styles
 .header
-  div[class*='col-']
-    padding: 0
-  background: url("img/header__background.png")
+  background: url("img/header__background.png") center no-repeat
   background-size: cover
-  background-position: center
-  &__logo, &__heading
-    margin: 2em 0 4em 0
+  &__logo
+    margin: 2em 0 1em
   &__heading
+    margin-bottom: 2em
     color: white
-    text-align: right
+    text-align: center
     h1
+      font-size: 2.5em
       margin-bottom: .25em
       text-transform: uppercase
-
-.row-flex
-  display: flex
-  flex-flow: row wrap
-
-.col-flex
-  display: flex
-  flex-flow: column wrap
-  justify-content: space-between
+    h2
+      margin-bottom: .25em
 
 .navbar
   margin-bottom: 1.75em
-  text-align: right
+  text-align: center
   a
     color: white
-    font-size: 2em
+    font-size: 2.2em
     text-decoration: none
     padding: 0 1em
     display: inline-block
     &:hover
-      background-color: rgba(#38596E, 0.9)
+      background-color: rgba(#38596E, 0.5)
       border-radius: .25em .25em 0 0
-      border-bottom: 0.15em rgba(#38596E, 0.9) solid
+      border-bottom: 0.15em rgba(#38596E, 0.5) solid
     &.active
-      background-color: rgba(#38596E, 0.8)
+      background-color: rgba(#38596E, 0.7)
       border-radius: .25em .25em 0 0
       border-bottom: 0.3em white solid
+    span
+      display: none
 
 
 
 
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
 	/**/
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
+@media only screen and (min-width : 480px)
 	/**/
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+
+	.navbar
+    a
+      font-size: 1.5em
+      span
+        display: inline-block
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.navbar
+    a
+      font-size: 2em
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
 	/**/

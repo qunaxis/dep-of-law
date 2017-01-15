@@ -22,20 +22,53 @@
   display: flex
   flex-flow: row wrap
 
+.col-flex
+  display: flex
+  flex-flow: column wrap
+  justify-content: space-between
+
 .navbar
   margin-bottom: 1.75em
   text-align: right
   a
     color: white
     font-size: 2em
+    text-decoration: none
     padding: 0 1em
     display: inline-block
-    &.active
-      border-bottom: 0.3em white solid
-      background-color: rgba(#38596E, 0.5)
+    &:hover
+      background-color: rgba(#38596E, 0.9)
       border-radius: .25em .25em 0 0
+      border-bottom: 0.15em rgba(#38596E, 0.9) solid
+    &.active
+      background-color: rgba(#38596E, 0.8)
+      border-radius: .25em .25em 0 0
+      border-bottom: 0.3em white solid
 
-.col-flex
-  display: flex
-  flex-flow: column wrap
-  justify-content: space-between
+
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/

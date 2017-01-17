@@ -17,19 +17,18 @@
   background-size: cover
   padding-top: 1em
   &__logo
-    margin-bottom: 3em
+    margin-bottom: 2em
     flex: 1 0 0
   &__heading
     margin-bottom: 2em
     color: white
     text-align: center
-    padding-right: 1em
+    padding: 0 1em
     h1
       font-size: 2.5em
-      margin-bottom: .25em
       text-transform: uppercase
     h2
-      margin-bottom: .25em
+      margin-bottom: .5em
 
 .navbar
   margin-bottom: 1.75em
@@ -69,6 +68,9 @@
 @media only screen and (min-width : 768px)
   .header__heading
     text-align: right
+    padding-right: 1em
+    span
+      display: block
   .flex-row
     flex-direction: row
     align-items: stretch

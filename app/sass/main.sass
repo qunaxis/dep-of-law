@@ -16,4 +16,38 @@ main
     font-weight: 400
   p
     margin-bottom: 1em
+
+.directions
+  h2
+    margin-bottom: 0
+  p
+    margin: 0
+  &__specific
+    font-style: italic
+    color: $light-color
+  &__degree
+    font-size: 1.2em
+    color: $main-color
+  &__moreinfo
+    display: inline-block
+    border-bottom: 1px dashed black
+
+.employees
+  .slider
+    p
+      margin: 0
+      font-size: .75em
+      font-weight: bold
+    .specific
+      font-style: italic
+      font-size: .75em
+      font-weight: 400
+      text-transform: lowercase
+    margin: 1em 25px
+    text-align: center
+    .slick-current:focus
+      outline: 0
+    .slick-next:before, .slick-prev::before
+      color: $main-color !important
+
 @import "media"

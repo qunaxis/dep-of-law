@@ -53,7 +53,7 @@ gulp.task('headersass', function() {
 gulp.task('libs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		// 'app/libs/magnific-popup/magnific-popup.min.js'
+		'app/libs/slick-carousel/slick/slick.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
@@ -75,7 +75,7 @@ gulp.task('imagemin', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('dist/img')); 
+		.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('buildhtml', function() {

@@ -6,7 +6,7 @@
 main
   background-color: #fff
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-  margin: -5em 0
+  margin: -5em 0 5em 0
   padding: 3em !important
   // &:first-child
   //   margin-top: 0
@@ -20,6 +20,7 @@ main
     margin-bottom: 1em
 
 .directions
+  text-align: center
   h1
     margin-top: 0
   h2
@@ -36,17 +37,28 @@ main
     font-style: italic
     display: inline-block
     border-bottom: 1px dashed black
+    margin-bottom: 1em !important
 
 .employees
-    p
-      margin: 0
-      font-size: .75em
-      font-weight: bold
-    .specific
-      font-style: italic
-      font-size: .75em
-      font-weight: 400
-      text-transform: lowercase
+  p
+    margin: 0
+    font-size: .75em
+    font-weight: bold
+  .specific
+    font-style: italic
+    font-size: .75em
+    font-weight: 400
+    text-transform: lowercase
+  &-slider__img
+    width: 8em
+    height: 8em
+    border-radius: 50%
+    margin: 0 auto
+
+.awards-slider
+  &__img
+    max-width: 10em
+    margin: 0 auto
 
 
 .slider

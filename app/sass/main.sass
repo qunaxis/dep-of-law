@@ -8,33 +8,36 @@ main
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
   margin: -5em 0
   padding: 3em !important
-  &:first-child
-    margin-top: 0
+  // &:first-child
+  //   margin-top: 0
   h1, h2, h3
     color: $main-color
     margin-bottom: .5em
     font-weight: 400
+  h1
+    margin: 1em 0 .5em 0
   p
     margin-bottom: 1em
 
 .directions
+  h1
+    margin-top: 0
   h2
     margin-bottom: 0
   p
     margin: 0
-  &__specific
+  &-specific
     font-style: italic
     color: $light-color
-  &__degree
+  &-degree
     font-size: 1.2em
     color: $main-color
-  &__moreinfo
+  &-moreinfo
     font-style: italic
     display: inline-block
     border-bottom: 1px dashed black
 
 .employees
-  .slider
     p
       margin: 0
       font-size: .75em
@@ -44,11 +47,15 @@ main
       font-size: .75em
       font-weight: 400
       text-transform: lowercase
-    margin: 1em 25px
-    text-align: center
-    .slick-slide:focus
-      outline: 0
-    .slick-next:before, .slick-prev::before
-      color: $main-color !important
+
+
+.slider
+  margin: 1em 25px
+  text-align: center
+
+.slick-slide:focus
+  outline: 0
+.slick-next:before, .slick-prev::before
+  color: $main-color !important
 
 @import "media"

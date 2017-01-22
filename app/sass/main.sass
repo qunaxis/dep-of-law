@@ -6,10 +6,9 @@
 main
   background-color: #fff
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-  margin: -5em 0 5em 0
-  padding: 3em !important
-  // &:first-child
-  //   margin-top: 0
+  margin-top: -5em
+  padding: 1em !important
+  text-align: left
   h1, h2, h3
     color: $main-color
     margin-bottom: .5em
@@ -20,11 +19,13 @@ main
     margin-bottom: 1em
 
 .directions
-  text-align: center
+  col-md-6, col-xs-12, col-xs-5, col-xs-7
+    padding: 0 !important
   h1
     margin-top: 0
   h2
     margin-bottom: 0
+    font-size: 1.4em
   p
     margin: 0
   &__specific

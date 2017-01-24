@@ -67,8 +67,8 @@ $('.awards-slider').slick({
 });
 
 $(function() {
-  // employeesSlider = $('.employees-slider');
-  // employeesSlider.removeClass('hide');
-  // awardsSlider = $('.awards-slider');
-  // awardsSlider.removeClass('hide');
+  employeesSlider = $('.employees-slider');
+  employeesSlider.removeClass('hide');
+  awardsSlider = $('.awards-slider');
+  awardsSlider.removeClass('hide');
 });

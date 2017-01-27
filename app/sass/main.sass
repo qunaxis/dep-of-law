@@ -59,8 +59,10 @@ main
 
 .employees
   a
-    color: black
+    color: #333
     list-style-type: none
+    &:focus
+      outline: none
   p
     margin: 0
     font-size: 1em
@@ -100,6 +102,13 @@ main
     margin: 1em 0
   h2
     color: $main-color
+  img
+    width: 100%
+  &__specific
+    font-size: 1.5em
+    font-weight: 100
+    text-transform: lowercase
+    color: $light-color
   .directions__specific
     font-size: 1em
     margin-top: .5em

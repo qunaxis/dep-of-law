@@ -72,10 +72,7 @@ $(function() {
   awardsSlider = $('.awards-slider');
   awardsSlider.removeClass('hide');
 
-  $('#bachelor__moreinfo').magnificPopup({
-    type: 'ajax',
-  });
-  $('#master__moreinfo').magnificPopup({
+  $('.moreinfo').magnificPopup({
     type: 'ajax',
   });
 });
